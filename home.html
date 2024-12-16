@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .header{
+            padding: 120px;
+            text-align: center;
+            background-image: url(https://i.pinimg.com/736x/17/47/53/174753ef051b3d126a442ca7d6f43d7c.jpg);
+            background-position: center;
+            background-size: cover;
+            color: white; /* white text color */
+        }
+        .header h1{
+            font-size:40px; /* Increase the font size of the <h1> element */
+        }
+
+        /* Style the top navigation bar */
+        .navbar{
+            overflow: hidden;
+            background-color:white;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a{
+            float:left;/* Make sure that the links stay side-by-side */
+            display:block;/* for responsive reasons*/
+            color:black;
+            text-align: center; /* Center the text */
+            padding: 14px 30px; /* Add some padding (14 for verticle and 30 for horizontal)*/
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Right-aligned link */
+        .navbar a.right{
+            float: right; /* Float a link to the right */
+        }
+
+        /* Change color on hover/mouse-over */
+        .navbar a:hover {
+            background-color: #ccc7ba; /* Grey background color */
+            color: black; /* Black text color */
+        } 
+        
+        /*ensure proper sizing*/
+        *{
+            box-sizing: border-box;
+        }
+        /*column*/
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+        }
+
+        .side{
+            flex: 50%; /* width of the sidebar */
+            background-color: #f1f1f1; /* Grey background color */
+            padding: 40px; /* Some padding */
+        }
+
+        /* Main column */
+        .main {
+
+            flex: 50%; /* Set the width of the main content */
+            background-image: url(https://i.pinimg.com/736x/8c/15/93/8c1593765b660cd50767c90ca98e1469.jpg); /* White background color */
+            background-position: center;
+            background-size: cover;
+            padding: 70px; /* Some padding */
+        }
+        .main a:hover {
+            background-color: #4a4841; /* Grey background color */
+            color: black; /* Black text color */
+        } 
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+        .row {
+            flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+            float: none;
+            width: 100%;
+            }
+        }
+
+        .bordered-text {
+            color: black;
+            border: 2px solid #000; /* Black border */
+            padding: 20px;         /* Adds spacing inside the border */
+            display: inline-block; /* Ensures the border wraps closely around text */
+            border-radius: 5px;    /* Rounds the corners of the border (optional) */
+            font-family: Arial, sans-serif; /* Styling text font */
+            font-size: 18px;      /* Adjust text size */
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        
+        .footer a{
+            padding: 20px; /* Some padding */
+            text-align: center; /* Center text*/
+            background: #000000; /* Grey background */
+            display:block;/* for responsive reasons*/
+            color:white;
+            text-decoration: none; /* Remove underline */
+        }
+        .footer a.right{
+            float: right; /* Float a link to the right */
+        }
+        /* Change color on hover/mouse-over */
+        .footer a:hover {
+            color: rgb(58, 58, 58); /* Black text color */
+        } 
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html" class="right">profile</a>
+    </div>
+
+    <div class="header">
+        <h1>Drew</h1>
+        <p>By Navya.</p>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <p><b></b></p>
+            <p><i>this is my world of art—wide open for you to explore. </i></p>
+        </div>
+        <div class="main">
+            <a href= "#" class="bordered-text">BUY PRINTS</a>
+            <p><i>I'm open for commissions</i> :3</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+          <img src="mc1.jpg">
+          <img src="mc2.jpg">
+          <img src="gris1.jpg">
+          <img src="mc4.jpg">
+          <img src="gris2.jpg">
+          <img src="mc6.jpg">
+          <img src="mc4.jpg">
+        </div>
+        <div class="column">
+          <img src="underwater.jpg">
+          <img src="ocean.jpg">
+          <img src="wedding.jpg">
+          <img src="mountainskies.jpg">
+          <img src="rocks.jpg">
+          <img src="underwater.jpg">
+        </div>
+        <div class="column">
+          <img src="wedding.jpg">
+          <img src="rocks.jpg">
+          <img src="falls2.jpg">
+          <img src="paris.jpg">
+          <img src="nature.jpg">
+          <img src="mist.jpg">
+          <img src="paris.jpg">
+        </div>
+        <div class="column">
+          <img src="underwater.jpg">
+          <img src="ocean.jpg">
+          <img src="wedding.jpg">
+          <img src="mountainskies.jpg">
+          <img src="rocks.jpg">
+          <img src="underwater.jpg">
+        </div>
+      </div>
+
+    <div class="footer">
+            <a href="#"><i class="fa fa-facebook-official">Facebook</i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i>Pinterest</a>
+            <a href="#"><i class="fa fa-twitter"></i>Twitter</a>
+            <a href="#"><i class="fa fa-flickr"></i>Flicker</a>
+            <a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a>
+
+     
+    </div>
+
+</body>
+</html>
